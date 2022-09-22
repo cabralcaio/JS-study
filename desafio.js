@@ -25,7 +25,12 @@ Digite 1 para pagamento em dinheiro
 Digite 2 para pagamento em cheque
 Digite 3 para pagamento com cartão
 `
-const metodoDePagamento = prompt(mensagem) // 2
+let metodoDePagamento = prompt(mensagem) // 2
+
+while(metodoDePagamento > 3 || isNaN(metodoDePagamento) || metodoDePagamento < 1){
+  alert("Insira uma forma de pagamento correta");
+  metodoDePagamento= prompt(mensagem);
+}
 
 console.log(precoProduto)
 console.log(metodoDePagamento)
