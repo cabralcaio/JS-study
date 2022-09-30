@@ -1,0 +1,37 @@
+:root {
+    --verde: #B8E0D2;
+    --azul: #809BCE;
+    --amarelo: #ffd900;
+}
+
+main {
+    background-color: var(--azul);
+    min-height: 100vh;
+}
+
+#main-header {
+    height: 90px;
+}
+
+#app-logo {
+    width: 220px;
+}
+
+#add-todo {
+    color: darkblue;
+    background-color: var(--verde);
+    font-size: 0; 
+    /* o font size serve para centralizar o ícone */
+}
+
+#todos-list .card{
+    background-color: var(--verde);
+}
+
+#todos-list .card + .card {
+    margin-top: 10px;
+}
+
+.todo-text {
+    margin: 0;
+}
